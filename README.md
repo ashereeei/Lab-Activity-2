@@ -1,6 +1,8 @@
 # Lab-Activity-2
 Ashley Rosse Melgar
+
 BSIT 2A
+
 Land Rover:     Defender 2020
 Brand: Land Rover
 Model: Land Rover
