@@ -25,6 +25,7 @@ System.out.println();
 
 
 //DEMO2
+System.out.println("--Method Parameter--");
 Truck truck = new Truck("Isuzu", "QLR77E", 2026, 4);
 printDetails(truck);
 System.out.println();
@@ -37,7 +38,8 @@ Motorcycle motor = new Motorcycle("Honda", "Beat v3",2023, "125cc");
 printDetails(motor);
 System.out.println();
 
-//DEMO3
+//DEMO3 
+System.out.println("--Polymorphic Array--");
 Vehicle[] vehicles = {
     new Truck("Hyundai", "HD78 GT", 2026, 6),
     new Car("Toyota", "Corolla",2024, 4),
@@ -45,10 +47,13 @@ Vehicle[] vehicles = {
   };
   
   for(Vehicle currentVehicle: vehicles) {
-     printDetails(currentVehicle);
-     System.out.println();
-   }
-     
+  printDetails(currentVehicle);
+  currentVehicle.moveForward();
+  currentVehicle.moveBackwards();
+  currentVehicle.moveLeft();
+  currentVehicle.moveRight();
+  System.out.println();
+}
 }
 }
 

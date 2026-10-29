@@ -7,10 +7,30 @@ super(brand, model, year);
 this.numberOfDoors = numberOfDoors;
 
 }
+@Override 
+public void moveForward() {
+  System.out.println ("The car goes forward");
+}
+
+@Override
+public void moveBackwards() {
+  System.out.println("The car goes backwards");
+}
+
+@Override
+public void moveLeft() {
+  System.out.println("The car goes left");
+}
+
+@Override 
+public void moveRight() {
+  System.out.println("The car goes left");
+}
+
 @Override
 public void displayInfo() {
-   super.displayInfo();
-   System.out.println("Number of Doors: " + numberOfDoors);
-   
- }
+  super.displayInfo();
+  System.out.println("Number of Doors: " + numberOfDoors);
+  
+}
 }
