@@ -5,11 +5,14 @@ public static void printDetails(Vehicle vehicle) {
 vehicle.displayInfo();
 }
 
+public static void performService(Serviceable item) {
+  item.service();
+}
+
 public static void main(String[] args) {
 //Truck
 Vehicle vehicle = new Truck("Scania", "G410 XT", 2022, 8);
 vehicle.displayInfo();
-
 System.out.println();
 
 //Car
@@ -53,6 +56,18 @@ Vehicle[] vehicles = {
   currentVehicle.moveLeft();
   currentVehicle.moveRight();
   System.out.println();
+}
+//Interfaces
+System.out.println("--Interfaces--");
+Serviceable car2 = new Car ("Toyota", "Vios",2023, 4);
+truck = new Truck("Hyundai", "HD78 GT", 2026, 6);
+motor = new Motorcycle("Honda", "Navi",2023, "125cc");
+Serviceable printer = new Printer();
+
+Serviceable[] items = {car2, truck, motor, printer};
+
+for (Serviceable currentItem: items) {
+  performService(currentItem);
 }
 }
 }

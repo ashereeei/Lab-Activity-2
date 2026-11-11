@@ -1,4 +1,4 @@
-public class Motorcycle extends Vehicle {
+public class Motorcycle extends Vehicle implements Serviceable {
 
 String engineType;
 
@@ -6,6 +6,10 @@ public Motorcycle(String brand, String model,int year, String engineType) {
 super(brand, model, year);
 this.engineType = engineType;
 
+}
+@Override 
+public void service () {
+  System.out.println ("Motorcycle: Inspect fuel ,tires and oil.");
 }
 @Override 
 public void moveForward() {
@@ -29,8 +33,8 @@ public void moveRight() {
 
 @Override
 public void displayInfo() {
-   super.displayInfo();
-   System.out.println("Engine Type: " + engineType);
-   
- }
+  super.displayInfo();
+  System.out.println("Engine Type: " + engineType);
+
+}
 }

@@ -1,4 +1,4 @@
-public class Truck  extends Vehicle {
+public class Truck  extends Vehicle implements Serviceable {
 
 int numberOfWheels;
 
@@ -7,7 +7,10 @@ super(brand, model, year);
 this.numberOfWheels = numberOfWheels;
 
 }
-
+@Override 
+public void service() {
+  System.out.println ("Truck: Inspect cargo brakes and oil.");
+}
 @Override
 public void moveForward() {
   System.out.println ("Yung truck umabante");
